@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Product Description Generator — Ecommerce Copy in Seconds</title>
+<meta name="description" content="Free AI product description generator. Enter your product name and features, get a ready-to-publish description for Amazon, Shopify, Etsy, or social. Powered by Cloudflare Workers AI.">
+<meta name="keywords" content="ai product description generator, product description writer, ecommerce copy generator, amazon product description, shopify product description">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#4c1d95">
+
+<link rel="canonical" href="https://toolara.dev/ai-product-description-generator/">
+<link rel="alternate" hreflang="en" href="https://toolara.dev/ai-product-description-generator/">
+<link rel="alternate" hreflang="zh-Hans" href="https://toolara.dev/ai-product-description-generator/zh/">
+<link rel="alternate" hreflang="x-default" href="https://toolara.dev/ai-product-description-generator/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Product Description Generator">
+<meta property="og:description" content="Generate ready-to-publish ecommerce product descriptions in seconds.">
+<meta property="og:url" content="https://toolara.dev/ai-product-description-generator/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "AI Product Description Generator",
+  "url": "https://toolara.dev/ai-product-description-generator/",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "description": "Free AI tool that generates product descriptions for ecommerce platforms.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="lang-switch">
+    <select id="langSelect" onchange="setLang(this.value)" aria-label="Language">
+      <option value="en">English</option>
+      <option value="zh">简体中文</option>
+    </select>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge">🛍️ AI-powered</div>
+    <h1 data-i18n="title">AI Product Description Generator</h1>
+    <p data-i18n="subtitle">Enter your product details. Get a ready-to-publish description for Amazon, Shopify, Etsy, or social.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2 class="visually-hidden" data-i18n="calcHeading">Product description generator</h2>
+
+    <label for="productName" data-i18n="productNameLabel">Product name</label>
+    <input type="text" id="productName" placeholder="Organic cotton baby onesie">
+
+    <label for="features" data-i18n="featuresLabel">Key features and details</label>
+    <textarea id="features" rows="5" placeholder="Example: 100% GOTS-certified organic cotton. Hypoallergenic and safe for sensitive skin. Snap closure for easy changing. Available in sizes 0-24 months. Machine washable."></textarea>
+
+    <label for="audience" data-i18n="audienceLabel">Target audience (optional)</label>
+    <input type="text" id="audience" placeholder="New parents who care about sustainability">
+
+    <div class="row">
+      <div>
+        <label for="length" data-i18n="lengthLabel">Length</label>
+        <select id="length">
+          <option value="short" data-i18n="lenShort">Short — 40-60 words</option>
+          <option value="medium" selected data-i18n="lenMedium">Medium — 100-140 words</option>
+          <option value="long" data-i18n="lenLong">Long — 200-280 words</option>
+        </select>
+      </div>
+      <div>
+        <label for="style" data-i18n="styleLabel">Writing style</label>
+        <select id="style">
+          <option value="professional" selected data-i18n="styleProfessional">Professional</option>
+          <option value="friendly" data-i18n="styleFriendly">Friendly</option>
+          <option value="luxury" data-i18n="styleLuxury">Luxury / premium</option>
+          <option value="playful" data-i18n="stylePlayful">Playful</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="platform" data-i18n="platformLabel">Target platform</label>
+    <select id="platform">
+      <option value="generic" selected data-i18n="platGeneric">Generic (any platform)</option>
+      <option value="amazon" data-i18n="platAmazon">Amazon</option>
+      <option value="shopify" data-i18n="platShopify">Shopify</option>
+      <option value="etsy" data-i18n="platEtsy">Etsy</option>
+      <option value="social" data-i18n="platSocial">Social (Instagram / TikTok)</option>
+    </select>
+
+    <button class="calc" type="button" id="generateBtn" onclick="generate()" data-i18n="calcBtn">Generate description</button>
+
+    <div id="loading" class="loading" style="display:none;">
+      <div class="spinner"></div>
+      <div data-i18n="loadingText">Writing your description...</div>
+    </div>
+
+    <div id="error" class="error" style="display:none;"></div>
+
+    <div id="result" role="region" aria-live="polite">
+      <div class="result-header">
+        <div class="result-label" data-i18n="resultLabel">Your product description</div>
+        <button class="copy-btn" type="button" onclick="copyResult()" data-i18n="copyBtn">Copy</button>
+        <span class="copy-copied" id="copyCopied" data-i18n="copyCopied">Copied!</span>
+      </div>
+      <div class="result-box" id="resultText"></div>
+      <div class="result-meta" id="resultMeta"></div>
+      <div class="result-disclaimer" data-i18n="resultDisclaimer">Review before publishing. Verify all product claims and specifications against actual product details.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="whatIsTitle">What does this tool do?</h2>
+    <p data-i18n="whatIsText">Writing product descriptions is tedious. Every product needs one, every platform has its own format, and the copy directly affects conversion. This tool takes your product details and generates a description tailored to the platform you're selling on — Amazon, Shopify, Etsy, or social — in the style and length you choose.</p>
+  </section>
+
+  <section>
+    <h2 data-i18n="tipsTitle">Tips for better descriptions</h2>
+    <ul>
+      <li data-i18n="tip1"><strong>List specific features, not benefits.</strong> The model will turn features into benefits. If you write "benefits" you'll get vague output. Write "GOTS-certified organic cotton, snap closure, 0-24 months" and let the model sell it.</li>
+      <li data-i18n="tip2"><strong>Include the audience.</strong> A baby onesie for eco-conscious parents reads differently than one for budget shoppers. Tell the model who it's for.</li>
+      <li data-i18n="tip3"><strong>Match the style to the brand.</strong> Luxury brands should use the Luxury style. Mass-market products use Professional or Friendly. Kids' products can use Playful.</li>
+      <li data-i18n="tip4"><strong>Choose the right platform.</strong> Amazon and Shopify have very different formatting expectations. If you sell on both, generate two versions.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 data-i18n="faqTitle">Frequently asked questions</h2>
+    <h3 data-i18n="faq1q">Is this tool free?</h3>
+    <p data-i18n="faq1a">Yes. It runs on Cloudflare Workers AI with a free daily quota. Normal use won't hit limits.</p>
+
+    <h3 data-i18n="faq2q">Will the description rank on Amazon?</h3>
+    <p data-i18n="faq2a">The Amazon format front-loads keywords naturally, which is a starting point for search visibility. But real Amazon ranking depends on your backend keywords, category, reviews, and sales velocity. The description is one input among many.</p>
+
+    <h3 data-i18n="faq3q">Will it invent product specs?</h3>
+    <p data-i18n="faq3a">No. The prompt explicitly tells the model not to invent features, materials, or specifications not in your input. However, always review the output — AI can occasionally rephrase things in ways that overstate what you provide.</p>
+
+    <h3 data-i18n="faq4q">Can I use it for non-physical products?</h3>
+    <p data-i18n="faq4a">Yes. It works for digital products, courses, software, and services. Just describe the "product" in the features field — what it does, what's included, and who it's for.</p>
+
+    <h3 data-i18n="faq5q">Can I edit the output?</h3>
+    <p data-i18n="faq5a">You should. The output is a polished draft, not a finished description. Add brand-specific details, adjust the tone to match your site, and verify any factual claims before publishing.</p>
+
+    <div class="disclaimer" data-i18n="disclaimer"><strong>Note:</strong> This tool generates draft descriptions. Always review, verify claims, and edit before publishing.</div>
+  </section>
+</main>
+
+<footer class="footer" data-i18n="footer">Runs on Cloudflare Workers AI. Your text is not stored.</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
