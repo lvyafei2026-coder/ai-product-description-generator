@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toolara Product Copy — Sell the benefit, not the spec (Free)</title>
-<meta name="description" content="Free AI product description generator. Enter your product name and features, get a ready-to-publish description for Amazon, Shopify, Etsy, or social. Powered by Cloudflare Workers AI.">
+<title>Toolara Product Copy — Sell the Benefit (Free)</title>
+<meta name="description" content="Free AI product description generator for Amazon, Shopify, and Etsy. Turn specs into benefit-first copy with SEO title and bullets.">
 <meta name="keywords" content="ai product description generator, product description writer, ecommerce copy generator, amazon product description, shopify product description">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="theme-color" content="#4c1d95">
@@ -17,8 +17,8 @@
 <link rel="alternate" hreflang="x-default" href="https://productcopy.toolara.dev/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Toolara Product Copy — Sell the benefit, not the spec">
-<meta property="og:description" content="Generate ready-to-publish ecommerce product descriptions in seconds.">
+<meta property="og:title" content="Toolara Product Copy — Sell the Benefit (Free)">
+<meta property="og:description" content="Free AI product description generator for Amazon, Shopify, and Etsy. Turn specs into benefit-first copy with SEO title and bullets.">
 <meta property="og:url" content="https://productcopy.toolara.dev/">
 <meta property="og:image" content="https://productcopy.toolara.dev/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -40,7 +40,7 @@
 }
 </script>
 
-<link rel="stylesheet" href="/css/style.css?v=20261105e">
+<link rel="stylesheet" href="/css/style.css?v=20261105g">
 <style id="footer-groups-css">
 .site-footer-grid{grid-template-columns:minmax(0,0.85fr) minmax(0,2.65fr)!important;gap:40px!important}
 .site-footer-column:nth-child(2){grid-row:1/span 2!important}
@@ -69,7 +69,108 @@
 .site-footer .fa-contact{margin-top:18px}.site-footer .fa-contact-h{margin:42px 0 10px !important;color:#f8fafc;font-size:0.95rem;font-weight:650}
 @media(max-width:960px){.site-footer-grid{grid-template-columns:1fr 1fr !important;gap:32px !important}}
 @media(max-width:640px){.site-footer-grid{grid-template-columns:1fr !important;gap:26px !important}}
-</style></head>
+</style><script type="application/ld+json" id="seo-rich">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is this tool free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. It runs on Cloudflare Workers AI with a free daily quota. Normal use won't hit limits."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will the description rank on Amazon?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Amazon format front-loads keywords naturally, which is a starting point for search visibility. But real Amazon ranking depends on your backend keywords, category, reviews, and sales velocity. The description is one input among many."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will it invent product specs?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The prompt explicitly tells the model not to invent features, materials, or specifications not in your input. However, always review the output — AI can occasionally rephrase things in ways that overstate what you provide."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use it for non-physical products?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. It works for digital products, courses, software, and services. Just describe the \"product\" in the features field — what it does, what's included, and who it's for."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I edit the output?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You should. The output is a polished draft, not a finished description. Add brand-specific details, adjust the tone to match your site, and verify any factual claims before publishing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it respect character limits?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It aims for the length you choose, but check the final count against each marketplace: Amazon bullets cap at 500 characters, titles at 200."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can it make claims like \"best\" or \"cures\"?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It avoids unverifiable medical and superlative claims. Add only claims you can substantiate with a certificate or test."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the copy unique per product?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Each request is written from the features you provide. Two products with identical features will produce similar copy, so add the differences."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "HowTo",
+   "name": "How it works — Toolara Product Copy",
+   "totalTime": "PT1M",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "Name the product",
+     "text": "A plain descriptive name works better than a model number. The name is what the copy anchors on."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "List the features",
+     "text": "Bullet points are fine: material, size, capacity, what it replaces. Do not worry about wording yet."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "Pick platform and length",
+     "text": "Amazon wants scannable bullets, Shopify allows a longer story, Etsy rewards a warmer first person voice."
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
 <body>
 <header class="site-header"><div class="site-header-inner"><a class="site-brand" href="/" aria-label="Toolara Product Copy"><img class="site-brand-logo" src="/images/logo-96.png" alt="Toolara Product Copy logo" width="30" height="30"><span class="site-brand-name" data-i18n="title"></span></a><nav class="site-nav" aria-label="Site navigation"><select id="langSelect" onchange="setLang(this.value)" aria-label="Language">
       <option value="en">English</option>
@@ -159,7 +260,7 @@ you poured at dawn.
 
     <div id="error" class="error" style="display:none;"></div>
 
-    </div><div class="studio-output"><div class="studio-empty"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 20V9"/></svg><div class="se-title">Your result will appear here</div><div class="se-hint">Fill in the form on the left, then hit the button to generate.</div></div><div id="result" role="region" aria-live="polite">
+    </div><div class="studio-output"><div class="studio-empty"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 20V9"/></svg><div class="se-title" data-i18n="seTitle">Your result will appear here</div><div class="se-hint" data-i18n="seHint">Fill in the form on the left, then hit the button to generate.</div></div><div id="result" role="region" aria-live="polite">
       <div class="result-header">
         <div class="result-label" data-i18n="resultLabel">Your product description</div>
         <button class="copy-btn" type="button" onclick="copyResult()" data-i18n="copyBtn">Copy</button>
@@ -172,13 +273,23 @@ you poured at dawn.
   </div></div>
   </section>
 
-<section class="example-section">
-  <h2>Example</h2>
+<section>
+    <h2 data-i18n="howTitle">How it works</h2>
+    <p data-i18n="howIntro">Features in, marketplace-ready copy out. Three fields.</p>
+    <ol class="how-list">
+      <li><h3 data-i18n="how1t">Name the product</h3><p data-i18n="how1d">A plain descriptive name works better than a model number. The name is what the copy anchors on.</p></li>
+      <li><h3 data-i18n="how2t">List the features</h3><p data-i18n="how2d">Bullet points are fine: material, size, capacity, what it replaces. Do not worry about wording yet.</p></li>
+      <li><h3 data-i18n="how3t">Pick platform and length</h3><p data-i18n="how3d">Amazon wants scannable bullets, Shopify allows a longer story, Etsy rewards a warmer first person voice.</p></li>
+    </ol>
+  </section>
+
+  <section class="example-section">
+  <h2 data-i18n="exampleTitle">Example</h2>
   <div class="example-grid">
-    <div class="example-col example-in"><div class="example-tag">Product facts</div><p>Stainless steel insulated water bottle. Keeps drinks cold 24h / hot 12h. Leakproof flip lid. 500ml / 750ml / 1L sizes. Dishwasher safe.</p></div>
-    <div class="example-col example-out"><div class="example-tag">Listing copy</div><p>Meet the bottle that keeps up with your day. Ice water still cold at the 24-hour mark, coffee hot through a long morning. The leakproof flip lid survives the bottom of your bag, and every size goes straight in the dishwasher.</p></div>
+    <div class="example-col example-in"><div class="example-tag" data-i18n="exTagIn">Product facts</div><p data-i18n="exIn">Stainless steel insulated water bottle. Keeps drinks cold 24h / hot 12h. Leakproof flip lid. 500ml / 750ml / 1L sizes. Dishwasher safe.</p></div>
+    <div class="example-col example-out"><div class="example-tag" data-i18n="exTagOut">Listing copy</div><p data-i18n="exOut">Meet the bottle that keeps up with your day. Ice water still cold at the 24-hour mark, coffee hot through a long morning. The leakproof flip lid survives the bottom of your bag, and every size goes straight in the dishwasher.</p></div>
   </div>
-  <p class="example-note">Output generated with the tool, lightly trimmed for length.</p>
+  <p class="example-note" data-i18n="exNote">Output generated with the tool, lightly trimmed for length.</p>
 </section>
 
   <section>
@@ -202,6 +313,16 @@ you poured at dawn.
   </section>
 
   <section>
+    <h2 data-i18n="whenTitle">When to use it, when not to</h2>
+    <div class="use-grid">
+      <div class="use-card"><h3 data-i18n="use1t">Launching a new SKU</h3><p data-i18n="use1d">You have specs from the supplier and no copy. This turns the spec sheet into a first draft.</p></div>
+      <div class="use-card"><h3 data-i18n="use2t">Migrating to another marketplace</h3><p data-i18n="use2d">The same product needs different formatting on Amazon and Etsy; rewrite instead of copying.</p></div>
+      <div class="use-card"><h3 data-i18n="use3t">Testing angles</h3><p data-i18n="use3d">Generate a benefit-led version and a spec-led version, then let the conversion numbers decide.</p></div>
+      <div class="use-card"><h3 data-i18n="use4t">Filling a large catalogue</h3><p data-i18n="use4d">Consistent structure across fifty listings matters more than perfect prose on one.</p></div>
+    </div>
+  </section>
+
+  <section>
     <h2 data-i18n="faqTitle">Frequently asked questions</h2>
     <div class="faq-list">
   <details class="faq-item"><summary data-i18n="faq1q">Is this tool free?</summary><div class="faq-a"><p data-i18n="faq1a">Yes. It runs on Cloudflare Workers AI with a free daily quota. Normal use won't hit limits.</p></div></details>
@@ -209,10 +330,45 @@ you poured at dawn.
   <details class="faq-item"><summary data-i18n="faq3q">Will it invent product specs?</summary><div class="faq-a"><p data-i18n="faq3a">No. The prompt explicitly tells the model not to invent features, materials, or specifications not in your input. However, always review the output — AI can occasionally rephrase things in ways that overstate what you provide.</p></div></details>
   <details class="faq-item"><summary data-i18n="faq4q">Can I use it for non-physical products?</summary><div class="faq-a"><p data-i18n="faq4a">Yes. It works for digital products, courses, software, and services. Just describe the "product" in the features field — what it does, what's included, and who it's for.</p></div></details>
   <details class="faq-item"><summary data-i18n="faq5q">Can I edit the output?</summary><div class="faq-a"><p data-i18n="faq5a">You should. The output is a polished draft, not a finished description. Add brand-specific details, adjust the tone to match your site, and verify any factual claims before publishing.</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq6q">Does it respect character limits?</summary><div class="faq-a"><p data-i18n="faq6a">It aims for the length you choose, but check the final count against each marketplace: Amazon bullets cap at 500 characters, titles at 200.</p></div></details>
+<details class="faq-item"><summary data-i18n="faq7q">Can it make claims like "best" or "cures"?</summary><div class="faq-a"><p data-i18n="faq7a">It avoids unverifiable medical and superlative claims. Add only claims you can substantiate with a certificate or test.</p></div></details>
+<details class="faq-item"><summary data-i18n="faq8q">Is the copy unique per product?</summary><div class="faq-a"><p data-i18n="faq8a">Each request is written from the features you provide. Two products with identical features will produce similar copy, so add the differences.</p></div></details>
   </div>
 
-    <div class="disclaimer" data-i18n="disclaimer"><strong>Note:</strong> This tool generates draft descriptions. Always review, verify claims, and edit before publishing.</div>
+    <div class="disclaimer" data-i18n="disclaimer"><strong>Note:</strong> This tool generates draft descriptions. Always review, verify claims, and edit before publishing.
+</div>
   </section>
+<section>
+    <h2 data-i18n="relatedTitle">Related free tools</h2>
+    <p data-i18n="relatedIntro">Every tool below runs on the same stack: no account, no queue, no character counter. Pick the one that fits the task at hand.</p>
+    <div class="related-grid">
+      <a class="related-card" href="https://humanize.toolara.dev/">
+        <img src="https://humanize.toolara.dev/images/logo-96.png" alt="Toolara Humanize" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Humanize</strong><span data-i18n="rel_humanize">Rewrite AI-generated paragraphs so they read like a person wrote them.</span></div>
+      </a>
+      <a class="related-card" href="https://summarize.toolara.dev/">
+        <img src="https://summarize.toolara.dev/images/logo-96.png" alt="Toolara Summarize" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Summarize</strong><span data-i18n="rel_summarize">Turn a long article or report into the key points in seconds.</span></div>
+      </a>
+      <a class="related-card" href="https://emailreply.toolara.dev/">
+        <img src="https://emailreply.toolara.dev/images/logo-96.png" alt="Toolara Email Reply" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Email Reply</strong><span data-i18n="rel_emailreply">Draft a reply in the right tone without staring at a blank box.</span></div>
+      </a>
+      <a class="related-card" href="https://coverletter.toolara.dev/">
+        <img src="https://coverletter.toolara.dev/images/logo-96.png" alt="Toolara Cover Letter" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Cover Letter</strong><span data-i18n="rel_coverletter">Build a cover letter that mirrors the job post, not a template.</span></div>
+      </a>
+      <a class="related-card" href="https://blogoutline.toolara.dev/">
+        <img src="https://blogoutline.toolara.dev/images/logo-96.png" alt="Toolara Blog Outline" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Blog Outline</strong><span data-i18n="rel_blogoutline">Go from a topic to an H2/H3 outline you can write from.</span></div>
+      </a>
+      <a class="related-card" href="https://captions.toolara.dev/">
+        <img src="https://captions.toolara.dev/images/logo-96.png" alt="Toolara Captions" width="32" height="32" loading="lazy">
+        <div><strong>Toolara Captions</strong><span data-i18n="rel_captions">Three caption variants per topic, tuned per platform.</span></div>
+      </a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer site-footer">
