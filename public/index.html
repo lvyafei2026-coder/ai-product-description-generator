@@ -40,7 +40,7 @@
 }
 </script>
 
-<link rel="stylesheet" href="/css/style.css?v=20261104a">
+<link rel="stylesheet" href="/css/style.css?v=20261105a">
 <style id="footer-groups-css">
 .site-footer-grid{grid-template-columns:minmax(0,0.85fr) minmax(0,2.65fr)!important;gap:40px!important}
 .site-footer-column:nth-child(2){grid-row:1/span 2!important}
@@ -80,7 +80,7 @@
 <header class="hero">
 
   <div class="hero-inner">
-    <div class="hero-badge">🛍️ AI-powered</div>
+    <div class="hero-badge" data-i18n="heroBadge">🛍️ Free · Amazon · Shopify · Etsy</div>
     <h1 data-i18n="title">AI Product Description Generator</h1>
     <p data-i18n="subtitle">Enter your product details. Get a ready-to-publish description for Amazon, Shopify, Etsy, or social.</p>
   </div>
@@ -163,34 +163,32 @@
   <section>
     <h2 data-i18n="whatIsTitle">What does this tool do?</h2>
     <p data-i18n="whatIsText">Writing product descriptions is tedious. Every product needs one, every platform has its own format, and the copy directly affects conversion. This tool takes your product details and generates a description tailored to the platform you're selling on — Amazon, Shopify, Etsy, or social — in the style and length you choose.</p>
+
+  <div class="what-grid">
+    <div class="what-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.83z"/><circle cx="7" cy="7" r="1"/></svg><div class="wc-t" data-i18n="f1t">Platform-native formats</div><p class="wc-d" data-i18n="f1d">Amazon bullets, Shopify storytelling, Etsy charm, or a social hook — matched to where you sell.</p></div>
+    <div class="what-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><div class="wc-t" data-i18n="f2t">Features become benefits</div><p class="wc-d" data-i18n="f2d">List raw specs and let the model turn them into copy that sells.</p></div>
+    <div class="what-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg><div class="wc-t" data-i18n="f3t">Four styles, zero invention</div><p class="wc-d" data-i18n="f3d">Professional, friendly, luxury or playful — and it never adds specs you didn't list.</p></div>  </div>
   </section>
 
   <section>
     <h2 data-i18n="tipsTitle">Tips for better descriptions</h2>
-    <ul>
-      <li data-i18n="tip1"><strong>List specific features, not benefits.</strong> The model will turn features into benefits. If you write "benefits" you'll get vague output. Write "GOTS-certified organic cotton, snap closure, 0-24 months" and let the model sell it.</li>
-      <li data-i18n="tip2"><strong>Include the audience.</strong> A baby onesie for eco-conscious parents reads differently than one for budget shoppers. Tell the model who it's for.</li>
-      <li data-i18n="tip3"><strong>Match the style to the brand.</strong> Luxury brands should use the Luxury style. Mass-market products use Professional or Friendly. Kids' products can use Playful.</li>
-      <li data-i18n="tip4"><strong>Choose the right platform.</strong> Amazon and Shopify have very different formatting expectations. If you sell on both, generate two versions.</li>
-    </ul>
+    <div class="tip-grid">
+    <div class="tip-card" data-i18n="tip1">List specific features, not benefits. The model will turn features into benefits. If you write "benefits" you'll get vague output. Write "GOTS-certified organic cotton, snap closure, 0-24 months" and let the model sell it.</div>
+    <div class="tip-card" data-i18n="tip2">Include the audience. A baby onesie for eco-conscious parents reads differently than one for budget shoppers. Tell the model who it's for.</div>
+    <div class="tip-card" data-i18n="tip3">Match the style to the brand. Luxury brands should use the Luxury style. Mass-market products use Professional or Friendly. Kids' products can use Playful.</div>
+    <div class="tip-card" data-i18n="tip4">Choose the right platform. Amazon and Shopify have very different formatting expectations. If you sell on both, generate two versions.</div>
+  </div>
   </section>
 
   <section>
     <h2 data-i18n="faqTitle">Frequently asked questions</h2>
-    <h3 data-i18n="faq1q">Is this tool free?</h3>
-    <p data-i18n="faq1a">Yes. It runs on Cloudflare Workers AI with a free daily quota. Normal use won't hit limits.</p>
-
-    <h3 data-i18n="faq2q">Will the description rank on Amazon?</h3>
-    <p data-i18n="faq2a">The Amazon format front-loads keywords naturally, which is a starting point for search visibility. But real Amazon ranking depends on your backend keywords, category, reviews, and sales velocity. The description is one input among many.</p>
-
-    <h3 data-i18n="faq3q">Will it invent product specs?</h3>
-    <p data-i18n="faq3a">No. The prompt explicitly tells the model not to invent features, materials, or specifications not in your input. However, always review the output — AI can occasionally rephrase things in ways that overstate what you provide.</p>
-
-    <h3 data-i18n="faq4q">Can I use it for non-physical products?</h3>
-    <p data-i18n="faq4a">Yes. It works for digital products, courses, software, and services. Just describe the "product" in the features field — what it does, what's included, and who it's for.</p>
-
-    <h3 data-i18n="faq5q">Can I edit the output?</h3>
-    <p data-i18n="faq5a">You should. The output is a polished draft, not a finished description. Add brand-specific details, adjust the tone to match your site, and verify any factual claims before publishing.</p>
+    <div class="faq-list">
+  <details class="faq-item"><summary data-i18n="faq1q">Is this tool free?</summary><div class="faq-a"><p data-i18n="faq1a">Yes. It runs on Cloudflare Workers AI with a free daily quota. Normal use won't hit limits.</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq2q">Will the description rank on Amazon?</summary><div class="faq-a"><p data-i18n="faq2a">The Amazon format front-loads keywords naturally, which is a starting point for search visibility. But real Amazon ranking depends on your backend keywords, category, reviews, and sales velocity. The description is one input among many.</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq3q">Will it invent product specs?</summary><div class="faq-a"><p data-i18n="faq3a">No. The prompt explicitly tells the model not to invent features, materials, or specifications not in your input. However, always review the output — AI can occasionally rephrase things in ways that overstate what you provide.</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq4q">Can I use it for non-physical products?</summary><div class="faq-a"><p data-i18n="faq4a">Yes. It works for digital products, courses, software, and services. Just describe the "product" in the features field — what it does, what's included, and who it's for.</p></div></details>
+  <details class="faq-item"><summary data-i18n="faq5q">Can I edit the output?</summary><div class="faq-a"><p data-i18n="faq5a">You should. The output is a polished draft, not a finished description. Add brand-specific details, adjust the tone to match your site, and verify any factual claims before publishing.</p></div></details>
+  </div>
 
     <div class="disclaimer" data-i18n="disclaimer"><strong>Note:</strong> This tool generates draft descriptions. Always review, verify claims, and edit before publishing.</div>
   </section>

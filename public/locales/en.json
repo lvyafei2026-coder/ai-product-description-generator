@@ -51,5 +51,12 @@
   "errFeatures": "Please describe the product features (at least 20 characters).",
   "errGeneric": "Something went wrong. Please try again.",
   "errNetwork": "Network error. Please try again.",
-  "errRateLimit": "Too many requests. Please wait a minute and try again."
+  "errRateLimit": "Too many requests. Please wait a minute and try again.",
+  "heroBadge": "🛍️ Free · Amazon · Shopify · Etsy",
+  "f1t": "Platform-native formats",
+  "f1d": "Amazon bullets, Shopify storytelling, Etsy charm, or a social hook — matched to where you sell.",
+  "f2t": "Features become benefits",
+  "f2d": "List raw specs and let the model turn them into copy that sells.",
+  "f3t": "Four styles, zero invention",
+  "f3d": "Professional, friendly, luxury or playful — and it never adds specs you didn't list."
 }

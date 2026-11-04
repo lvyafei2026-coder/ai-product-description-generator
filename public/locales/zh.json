@@ -51,5 +51,12 @@
   "errFeatures": "请描述产品卖点（至少 20 个字符）。",
   "errGeneric": "出错了，请重试。",
   "errNetwork": "网络错误，请重试。",
-  "errRateLimit": "请求过于频繁，请稍等一分钟后再试。"
+  "errRateLimit": "请求过于频繁，请稍等一分钟后再试。",
+  "heroBadge": "🛍️ 免费 · 亚马逊 · Shopify · Etsy",
+  "f1t": "平台原生格式",
+  "f1d": "Amazon 要点式、Shopify 故事型、Etsy 手作感、社媒钩子，按你的售卖平台匹配。",
+  "f2t": "参数自动变卖点",
+  "f2d": "只需罗列参数，模型负责把它们写成打动买家的文案。",
+  "f3t": "四种风格不编造",
+  "f3d": "Professional、Friendly、Luxury、Playful 任选，绝不添加你没写的参数。"
 }
