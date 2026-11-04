@@ -40,7 +40,7 @@
 }
 </script>
 
-<link rel="stylesheet" href="/css/style.css?v=20261105a">
+<link rel="stylesheet" href="/css/style.css?v=20261105e">
 <style id="footer-groups-css">
 .site-footer-grid{grid-template-columns:minmax(0,0.85fr) minmax(0,2.65fr)!important;gap:40px!important}
 .site-footer-column:nth-child(2){grid-row:1/span 2!important}
@@ -78,27 +78,48 @@
 
 
 <header class="hero">
-
   <div class="hero-inner">
-    <div class="hero-badge" data-i18n="heroBadge">🛍️ Free · Amazon · Shopify · Etsy</div>
-    <h1 data-i18n="title">AI Product Description Generator</h1>
-    <p data-i18n="subtitle">Enter your product details. Get a ready-to-publish description for Amazon, Shopify, Etsy, or social.</p>
+    <div class="hero-copy">
+      <div class="hero-badge" data-i18n="heroBadge">Free · Amazon · Shopify · Etsy</div>
+      <h1 data-i18n="heroTitle">Sell the benefit, not the spec sheet</h1>
+      <p data-i18n="subtitle">Enter your product details. Get a ready-to-publish description for Amazon, Shopify, Etsy, or social.</p>
+      <ul class="hero-points">
+        <li data-i18n="heroPoint1">Amazon, Shopify and Etsy formats</li>
+        <li data-i18n="heroPoint2">Benefit-first bullet points</li>
+        <li data-i18n="heroPoint3">SEO title and meta description</li>
+      </ul>
+      <a class="hero-cta" href="#tool" data-i18n="heroCta">Try it now</a>
+    </div>
+    <div class="hero-preview">
+      <div class="hp-bar"><span class="hp-dots"><i></i><i></i><i></i></span><span data-i18n="heroPreviewLabel">Example</span></div>
+      <div class="hp-prompt"><span class="hp-label" data-i18n="heroInputLabel">INPUT</span><span data-i18n="heroInputText">500ml vacuum flask, keeps hot 12h, $29</span></div>
+      <div class="hp-arrow"></div>
+      <div class="hp-body" data-i18n="heroPreviewBody">Tired of cold coffee by 9am?
+
+This 500ml vacuum flask keeps drinks hot for
+12 hours, so your noon sip tastes like the one
+you poured at dawn.
+
+• Leak-proof lid, opens one-handed
+• Fits standard cup holders</div>
+      <div class="hp-tags"><span data-i18n="heroPreviewTag1">Amazon</span><span data-i18n="heroPreviewTag2">Benefit-first</span></div>
+    </div>
   </div>
 </header>
 
 <main class="wrap">
-  <section class="card">
+  <section class="card" id="tool">
     <div class="studio"><div class="studio-input">
     <h2 class="visually-hidden" data-i18n="calcHeading">Product description generator</h2>
 
     <label for="productName" data-i18n="productNameLabel">Product name</label>
-    <input type="text" id="productName" placeholder="Organic cotton baby onesie">
+    <input type="text" id="productName" placeholder="Organic cotton baby onesie" data-i18n-ph="ph1">
 
     <label for="features" data-i18n="featuresLabel">Key features and details</label>
-    <textarea id="features" rows="5" placeholder="Example: 100% GOTS-certified organic cotton. Hypoallergenic and safe for sensitive skin. Snap closure for easy changing. Available in sizes 0-24 months. Machine washable."></textarea>
+    <textarea id="features" rows="5" placeholder="Example: 100% GOTS-certified organic cotton. Hypoallergenic and safe for sensitive skin. Snap closure for easy changing. Available in sizes 0-24 months. Machine washable." data-i18n-ph="ph2"></textarea>
 
     <label for="audience" data-i18n="audienceLabel">Target audience (optional)</label>
-    <input type="text" id="audience" placeholder="New parents who care about sustainability">
+    <input type="text" id="audience" placeholder="New parents who care about sustainability" data-i18n-ph="ph3">
 
     <div class="row">
       <div>

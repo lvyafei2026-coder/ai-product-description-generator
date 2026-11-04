@@ -1,5 +1,16 @@
 {
   "title": "Toolara Product Copy",
+  "heroTitle": "写卖点，不写参数表",
+  "heroCta": "免费试用",
+  "heroPoint1": "适配 Amazon / Shopify / Etsy 格式",
+  "heroPoint2": "卖点优先的要点列表",
+  "heroPoint3": "附带 SEO 标题与描述",
+  "heroPreviewLabel": "示例",
+  "heroInputLabel": "输入",
+  "heroInputText": "500ml 保温杯，保温 12 小时，29 美元",
+  "heroPreviewBody": "早上九点咖啡就凉了？\n\n这款 500ml 保温杯能保温 12 小时，\n中午喝到的还是清晨刚倒的那口温度。\n\n• 防漏杯盖，单手可开\n• 适配标准杯架",
+  "heroPreviewTag1": "Amazon",
+  "heroPreviewTag2": "卖点优先",
   "subtitle": "输入产品信息，生成可直接发布到 Amazon、Shopify、Etsy 或社交媒体的描述。",
   "calcHeading": "产品描述生成",
   "productNameLabel": "产品名称",
@@ -52,11 +63,14 @@
   "errGeneric": "出错了，请重试。",
   "errNetwork": "网络错误，请重试。",
   "errRateLimit": "请求过于频繁，请稍等一分钟后再试。",
-  "heroBadge": "🛍️ 免费 · 亚马逊 · Shopify · Etsy",
+  "heroBadge": "免费 · Amazon · Shopify · Etsy",
   "f1t": "平台原生格式",
   "f1d": "Amazon 要点式、Shopify 故事型、Etsy 手作感、社媒钩子，按你的售卖平台匹配。",
   "f2t": "参数自动变卖点",
   "f2d": "只需罗列参数，模型负责把它们写成打动买家的文案。",
   "f3t": "四种风格不编造",
-  "f3d": "Professional、Friendly、Luxury、Playful 任选，绝不添加你没写的参数。"
+  "f3d": "Professional、Friendly、Luxury、Playful 任选，绝不添加你没写的参数。",
+  "ph1": "有机棉婴儿连体衣",
+  "ph2": "例如：100% GOTS 认证有机棉，低敏亲肤，按扣设计方便换片，0-24 个月尺码，可机洗。",
+  "ph3": "注重环保的新手父母"
 }
